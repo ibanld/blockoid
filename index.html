@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>Breakoid</title>
+</head>
+<body class='bg-dark'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 col-xs-6">
+                <div class="alert invisible" role="alert" id='send-alert'></div>
+                <<div class="card" id='start'>
+                    <div class="card-body">
+                        <h3>Instructions</h3>
+                        <hr>
+                        <p>
+                            <h5><strong>Tap</strong>, press <strong>Space</strong> or click on <strong>Start Game</strong> to play!</h5>
+                        </p>
+                        <p>
+                            Use <strong>Arrow Keys</strong>, move your <strong>Mouse</strong>, or slide the <strong>paddle</strong> to prevent the ball to fall.
+                        </p>
+                            
+                    </div>
+                </div>
+                <canvas class="border border-info" id="game-canvas"></canvas>
+            </div>
+            <div class="col-4 offset-1 col-xs-6">
+                <div class="card mt-3 border border-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Stats</h5>
+                        <p class="card-text" id="game-stats">
+                            Score: <span id='show-score'></span> Lives: <span id='show-lives'></span> Level: <span id='show-level'></span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col"><button type="button" class="btn btn-success mt-1" id="start-game">Start Game</button></div>
+                            <div class="col"><button type="button" class="btn btn-warning mt-1" id="pause-game">Pause Game</button></div>
+                            <div class="col"><button type="button" class="btn btn-danger mt-1 disabled" disabled id="end-game">End Game</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</body>
+</html>
