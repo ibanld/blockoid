@@ -20,4 +20,4 @@ __Breakoid__ has been built using [JavaScript](), [Bootstrap](https://getbootstr
 1. Every different event has been assigned with a sound effect. 
 
 ## 📝 License
-__Breakoid__ is under _MIT License_. You can read the full license file [here](LICENSE.md).
+__Breakoid__ is under _MIT License_. You can read the full license file [here](LICENSE).
