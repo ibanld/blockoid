@@ -6,7 +6,7 @@ __Breakoid__ has been built using [JavaScript](), [Bootstrap](https://getbootstr
 
 ## 🌟 Features
 1. Developed using __JavaScript__.
-1. _Dynamic event generator:_ every time a level is completed another Bricks' row is added.
+1. _Dynamic level generator:_ every time a level is completed another Bricks' row is added.
 1. _Random Hits:_ every brick has a __hits__ property that sets the amount of hits needed to break the block. It is a random number from from 1 to 3.
 1. _Pick Ups:_ every brick has a __pick up__ property that randomly sets a pickup when is broken. The pick ups that can be set in a brick are the following: 
     1. _Extra life:_ an extra life for the player.
