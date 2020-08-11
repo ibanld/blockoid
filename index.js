@@ -9,6 +9,8 @@ const btnPause = document.getElementById('pause-game');
 const btnEnd = document.getElementById('end-game');
 const sendAlert = document.getElementById('send-alert');
 const startCard = document.getElementById('start');
+const padLeft = document.getElementById('pad-left');
+const padRight = document.getElementById('pad-right');
 
 // Canvas limits and game vars
 const paddleHeight = canvas.height * 0.025;
@@ -170,6 +172,15 @@ const mouseMoveHandler = (e) => {
 	if (relativeX > 0 && relativeX < canvas.width) {
 		paddleX = relativeX - paddleWidth / 2;
 	}
+};
+
+// Pad Btns
+padRight.onclick = () => {
+	paddleX += 7;
+};
+
+padLeft.onclick = () => {
+	paddleX -= 7;
 };
 
 // Controls Event listeners
